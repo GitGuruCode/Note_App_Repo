@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vikas">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="411dp"
+            android:layout_height="83dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="0dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <ImageView
+                android:id="@+id/filterbtn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/m" />
+
+            <TextView
+                android:id="@+id/highbtn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/filterbar"
+                android:gravity="center"
+                android:text="High"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mediumbtn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/filterbar"
+                android:gravity="center"
+                android:text="Medium"
+                android:textColor="@color/yellow"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lowbtn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/filterbar"
+                android:gravity="center"
+                android:text="Low"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvL"
+            android:layout_width="411dp"
+            android:layout_height="626dp"
+            android:layout_below="@id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="4dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="22dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:backgroundTint="#2196F3"
+            tools:layout_editor_absoluteX="327dp"
+            tools:layout_editor_absoluteY="659dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

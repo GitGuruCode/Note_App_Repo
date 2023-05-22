@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.deleteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constL"
+        android:layout_height="match_parent"
+        android:background="@color/vikas"
+        >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/delfbtn"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_baseline_done_24"
+            android:backgroundTint="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearL"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/deltitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:maxLines="1"
+            android:gravity="start"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:background="@drawable/editback"
+            android:hint="title.."/>
+        <EditText
+            android:id="@+id/delsubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editback"
+            android:hint="subtitle.."
+            />
+        <LinearLayout
+            android:id="@+id/linearL2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp">
+            <ImageView
+                android:id="@+id/delbluei"
+                android:layout_width="25dp"
+                android:background="@drawable/blue"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="25dp"/>
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:id="@+id/delyellowi"
+                android:layout_width="25dp"
+                android:background="@drawable/yellow"
+                android:padding="5dp"
+                android:layout_height="25dp"/>
+            <ImageView
+                android:id="@+id/delredi"
+                android:layout_width="25dp"
+                android:background="@drawable/red"
+                android:padding="5dp"
+                android:layout_height="25dp"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/delwriteNotes"
+            android:layout_width="match_parent"
+            android:layout_height="298dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:background="@drawable/editback"
+            android:hint="Write your notes here.."
+            android:gravity="start"
+            android:layout_marginTop="5dp"/>
+        "
+    </LinearLayout>
+
+</FrameLayout>
